@@ -17,3 +17,12 @@ var frutaInicial = frutas.unshift("Tomate de arbol");  //agregar un nuevo valor 
 var eliminarFrutaInicial = frutas.shift(); // borra el que esta al inicio de la posición del array
 
 var posicionElementoFrutas = frutas.indexOf("Mango"); // Muestra la posición del elemento en el array.
+
+function solution(arraySecreto) {
+    
+    var valor = typeof arraySecreto[0];
+
+    return (valor == 'string') ? true : false;
+
+  }
+  

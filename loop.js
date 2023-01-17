@@ -25,3 +25,22 @@ while(estudiantes.length > 0){
 
     saludarEstudiantes(estudiante);
 }
+
+function solution(estudiantes, deathCount, nuevo) {
+    
+    var estudiantes;
+
+    if(deathCount == 0){
+        
+        estudiantes.push(nuevo);
+    
+    }else if(deathCount > 0){
+
+        
+
+    }
+
+
+    return estudiantes;
+
+  }

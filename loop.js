@@ -36,7 +36,11 @@ function solution(estudiantes, deathCount, nuevo) {
     
     }else if(deathCount > 0){
 
+        for(var i = 0; i < deathCount ; i++){
+            estudiantes.pop();
+        }
         
+        estudiantes.push(nuevo);
 
     }
 
@@ -44,3 +48,8 @@ function solution(estudiantes, deathCount, nuevo) {
     return estudiantes;
 
   }
+
+solution(["Nico", "Zule"], 0, "Santi")
+solution(["Juan", "Juanita", "Daniela"], 1, "Julian")
+solution(["Nath", "Luisa", "Noru"], 2, "Cami")
+

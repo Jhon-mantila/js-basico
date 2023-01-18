@@ -17,3 +17,18 @@ var miAuto = {
 console.log(miAuto.marca);
 
 console.log(miAuto.detalleDelAuto());
+
+
+//función contructora, crear una clase(objeto) luego se llaman su atributos
+function auto(marca, modelo, annio){
+    
+    this.marca = marca;
+    this.modelo = modelo;
+    this.ano = annio;
+
+}
+
+var autoNuevo = new auto("Tesla", "Model 3", 2020);
+var autoNuevo2 = new auto("Tesla", "Modelo X", 2019);
+var autoNuevo3 = new auto("Tesla", "Modelo 2", 2018);
+new auto("Toyota", "Corolla", 2019);

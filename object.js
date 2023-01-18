@@ -41,8 +41,37 @@ for(var i = 0; i < 2; i++){
     var marca = prompt("Ingresa la marca del auto");
     var modelo = prompt("Ingresa el modelo del auto");
     var ano = prompt("Ingresa el año del auto");
-    
+
     autos.push(new auto(marca, modelo, ano));
 }
 
 console.log(autos);
+
+var car = {
+    color: "Rojo",
+    brand: "Kia"
+    
+}
+
+    
+function solution(car) {
+        //console.log(car);
+        //console.log("license: "+ car.licensePlate);
+
+            if(car.licensePlate != undefined){
+               //console.log("Tiene Licencia");
+               car.drivingLicense = true;
+            }else{
+                //console.log("No Tiene Licencia");
+                car.drivingLicense = false;
+            }
+
+            return car;
+          
+    
+}
+solution(car);
+
+for (var property in car) {
+    console.log(`${property}: ${car[property]}`);
+}

@@ -44,3 +44,30 @@ var articulosBaratos = articulos.some(function(articulo){
 });
 
 console.log(articulosBaratos);
+
+//ejercicio con filters
+
+var cars = [
+    {
+      color: 'red',
+      brand: 'Kia',
+    },
+    {
+      color: 'gray',
+      brand: 'Chevrolet',
+      licensePlate: 'AAA111',
+    },
+    {
+      licensePlate: 'RGB255',
+    },
+  ];
+
+function solution(cars) {
+    
+    return cars.filter(function (car) {
+        return car.licensePlate != undefined;
+    });
+}
+
+  solution(cars);
+
